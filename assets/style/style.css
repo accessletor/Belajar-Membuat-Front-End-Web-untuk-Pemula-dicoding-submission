@@ -1,0 +1,92 @@
+/*main*/
+main {
+	/*padding: 20px;*/
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	width: 100%;
+	overflow: auto;
+}
+#content {
+	width: 80%;
+	padding: 0;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+section h2 {
+	text-align: center;
+	font-weight: bold;
+	color: #212120;
+}
+section h2::after{
+	content: "";
+	display: block;
+	width: 10%;
+	height: 2px;
+	background-color: black;
+	margin: 5px auto;
+}
+p {
+	color: #302e2a;
+}
+/*form*/
+input[type=text]{
+	width: 100%; 
+	padding: 12px;  
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px;
+	resize: vertical;
+}
+button[type=submit] {
+	background-color: #1684fa;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+button[type="submit"]:hover {
+	background-color: #77b5f7;
+}
+/*create in javascript*/
+article{
+	margin-bottom: 5px;
+}
+.book_item{
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+}
+.green{
+	background-color: #139608;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.green:hover{
+	background-color: #68c75f;
+}
+.red{
+	background-color: #c91b08;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.red:hover {
+	background-color: #f07062;
+}

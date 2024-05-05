@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>submission web storage</title>
+	<link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body id="home">
+	<main>
+		<div id="content">
+			<section  id="contact" class="card">	
+				<h2>Masukkan Buku Baru</h2>
+				<form id="inputBook">
+					<label for="inputBookTitle">Judul Buku</label>
+					<input type="text" id="inputBookTitle" name="inputBookTitle" placeholder="Masukan Judul Buku" required>
+					<label for="inputBookYear">Tahun</label>
+					<input type="text" id="inputBookYear" name="inputBookYear" type="number" placeholder="Masukan tahun" required>
+					<label for="inputBookAuthor">Penulis</label>
+					<input type="text" id="inputBookAuthor" name="inputBookAuthor" placeholder="Masukan Penulis" required>
+					<input id="inputBookIsComplete" type="checkbox">
+        			<label for="inputBookIsComplete">Selesai dibaca</label>
+        			<br>
+        			<br>
+					<button id="bookSubmit" type="submit">Submit</button>
+				</form>
+			</section>
+
+			<!-- search -->
+			  <section class="search_section card">
+    			<h2>Cari Buku (Opsional)</h2>
+    			<form id="searchBook">
+      			<label for="searchBookTitle">Judul</label>
+      			<input id="searchBookTitle" type="text">
+      			<button id="searchSubmit" type="submit">Cari</button>
+    			</form>
+  			</section>
+  			<!-- dom javascript -->
+  			<section class="book_shelf card">
+    			<h2>Belum selesai dibaca</h2>
+    
+    		<div id="incompleteBookshelfList" class="book_list">
+      			<!-- dom berjalan -->
+    		</div>
+  			</section>
+  
+  		<section class="book_shelf card">
+    	<h2>Selesai dibaca</h2>
+    
+    	<div id="completeBookshelfList" class="book_list">
+        	<!-- dom berjalan -->
+  		</section>
+		</div>
+	</main>
+	<script src="assets/script/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
